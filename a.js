@@ -1,12 +1,7 @@
-var maxProfit = function (prices) {
-  let maxProf = 0,
-    curr = prices[0];
-
-  for (let price of prices) {
-    if (curr < price) maxProf = Math.max(maxProf, price - curr);
-    else curr = price;
-  }
-  return maxProf;
+const decode = (encoded, first) => {
+  const out = [first];
+  encoded.forEach((x, i) => out.push(out[i] ^ x));
+  return out;
 };
 
-console.log(maxProfit([7, 1, 5, 3, 6, 4]));
+console.log(decode([1, 2, 3], 1));
