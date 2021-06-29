@@ -1,14 +1,7 @@
-var subtractProductAndSum = function (n) {
-  const num = n.toString();
-  let mul = 1;
-  let sum = 0;
-
-  for (let i = 0; i < num.length; i++) {
-    let temp = num.charAt(i);
-    mul *= Number(temp);
-    sum += Number(temp);
-  }
-  return mul - sum;
+var commonChars = function (words) {
+  a;
 };
 
-console.log(subtractProductAndSum(234));
+console.log(commonChars(['bella', 'label', 'roller']));
+const a = [10];
+const arr = [];
